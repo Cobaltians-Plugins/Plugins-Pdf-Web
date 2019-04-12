@@ -1,11 +1,10 @@
 (function(cobalt) {
     var plugin = {
         name: "pdf",
-        init: function(options) {
+        init: function() {
             //create shortcuts
             cobalt.openpdf = this.openpdf.bind(this);
         },
-        config: function(settings) {},
         openpdf: function(data, callback) {
             this.send("pdf", data, function(data) {
                 if (typeof callback == 'function') {
