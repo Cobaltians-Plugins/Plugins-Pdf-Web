@@ -1,5 +1,6 @@
 (function(cobalt) {
   var plugin = {
+    name: 'CobaltPdfPlugin',
     classes: {
       ios: 'CobaltPdfPlugin',
       android: 'io.kristal.pdfplugin.PdfPlugin'
