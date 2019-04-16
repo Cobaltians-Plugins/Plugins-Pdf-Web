@@ -9,12 +9,12 @@
       cobalt.openpdf = this.openpdf.bind(this);
     },
     openpdf: function(data, callback) {
-      cobalt.openpdfCallback = callback;
+      this.openpdfCallback = callback;
       cobalt.plugins.send(this, "pdf", data)
     },
     handleEvent: function(json) {
-      if (typeof cobalt.openpdfCallback === 'function') {
-        cobalt.openpdfCallback(json.data)
+      if (typeof this.openpdfCallback === 'function') {
+        this.openpdfCallback(json.data)
       }
     }
   };
