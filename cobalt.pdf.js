@@ -8,7 +8,7 @@
     init: function() {
       cobalt.openpdf = this.openpdf.bind(this);
     },
-    openpdf: function(data, callback) {
+    openpdf: function(data) {
       cobalt.plugins.send(this, "pdf", data)
     }
   };
